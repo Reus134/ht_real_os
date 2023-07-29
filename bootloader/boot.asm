@@ -28,6 +28,7 @@ Label_start:
     mov es,ax
     pop ax
     mov bp,StartBootMessage
+    int 10h
 
 ;======reset floppy
     xor ah,ah
@@ -39,3 +40,4 @@ StartBootMessage: db "Start Booting ht_os"
 ;======fill zero untill whole sector
     times 510-($-$$) db 0
     dw 0xaa55
+

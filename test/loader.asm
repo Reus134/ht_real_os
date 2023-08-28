@@ -1,5 +1,5 @@
 org	10000h
-	jmp Label_Start
+
 	mov	ax,	cs
 	mov	ds,	ax
 	mov	es,	ax
